@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "frozen-lake-agent-ql"
+version = "0.1.0"
+description = "Training of a Q-Learning agent playing FrozenLake-v1"
+authors = ["Patrick Kalkman <patrick@simpletechture.nl>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+gymnasium = {extras = ["toy-text"], version = "^1.0.0"}
+numpy = "^2.1.2"
+imageio = {extras = ["ffmpeg"], version = "^2.36.0"}
+huggingface-hub = "^0.25.2"
+tqdm = "^4.66.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
